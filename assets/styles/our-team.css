@@ -665,10 +665,12 @@
     cursor: pointer;
   }
   .navbar_hamburger {
+    /* border: 2px solid red; */
     display: block;
     width: 28px;
     height: 24px;
     cursor: pointer;
+    z-index: 100000;
   }
 
   .navbar_dropdown_title {
