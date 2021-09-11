@@ -623,7 +623,7 @@
 
   .navbar_links {
     position: fixed;
-    top: 93px;
+    top: 0;
     left: 0;
     width: 300px;
     height: 100%;
@@ -651,7 +651,10 @@
   }
   .navbar_link {
     text-align: left;
+    height: 30px;
+    justify-content: flex-start;
   }
+
   .navbar_links_menue {
     position: absolute;
     top: 30px;
@@ -666,6 +669,10 @@
     width: 28px;
     height: 24px;
     cursor: pointer;
+  }
+
+  .navbar_dropdown_title {
+    justify-content: space-between;
   }
 
   /* .black_screen {
