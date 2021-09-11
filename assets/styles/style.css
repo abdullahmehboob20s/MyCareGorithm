@@ -772,13 +772,13 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1370px) {
   .navbar_wrapper {
     padding: 0 3rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .navbar_links {
     display: flex;
     align-items: center;
