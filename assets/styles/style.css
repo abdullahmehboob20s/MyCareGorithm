@@ -782,7 +782,7 @@
   .navbar_links {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 0rem;
     height: 100%;
   }
 
@@ -793,10 +793,12 @@
 
   .navbar_link {
     font-size: 1rem;
+    padding: 0 0.8rem;
   }
 
   .navbar_dropdown_title {
     font-size: 1rem;
+    padding: 0 0.8rem;
   }
   .navbar_image {
     width: 300px;
