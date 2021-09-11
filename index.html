@@ -36,8 +36,8 @@
           </a>
           <div class="navbar_dropdown_items">
             <a href="./our-team.html">Our Team</a>
-            <a href="./our-board.html">Our Board</a>
-            <a href="./relationships.html">Relationship</a>
+            <a href="./our-board.html">Advisory Board</a>
+            <a href="./relationships.html">Relationships</a>
           </div>
         </div>
         <a class="navbar_link" href="#ourproduct">Our Product</a>
@@ -112,7 +112,7 @@
       <div class="about_us">
         <img class="about_us_img" src="./assets/images/aboutUs_bg.png" alt="" />
         <div class="about_us_right">
-          <p class="about_us_title">About Us</p>
+          <!-- <p class="about_us_title">About Us</p> -->
           <p class="about_us_subtitle">Mission Statement</p>
           <p class="about_us_disc">
             Empower patients, caregivers, physicians, and cancer programs with a
@@ -122,18 +122,18 @@
           </p>
 
           <div class="about_us_cards">
-            <div class="about_us_card">
+            <a href="./our-team.html" class="about_us_card">
               <img src="./assets/images/ourTeam_icon.svg" alt="" />
               <p class="about_us_card_title">Our Team</p>
-            </div>
-            <div class="about_us_card">
+            </a>
+            <a href="./relationships.html" class="about_us_card">
               <img src="./assets/images/Relationship_icon.svg" alt="" />
               <p class="about_us_card_title">Relationships</p>
-            </div>
-            <div class="about_us_card">
+            </a>
+            <a href="./our-board.html" class="about_us_card">
               <img src="./assets/images/board_icon.svg" alt="" />
-              <p class="about_us_card_title">Our Board</p>
-            </div>
+              <p class="about_us_card_title">Advisory Board</p>
+            </a>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@
           “A picture is worth a thousand words. An interface is worth a thousand
           pictures.” <br />
           -- <br />
-          Ben Schneiderman
+          <span class="person_name"> Ben Schneiderman </span>
         </p>
         <p class="ben_quote_subtitle">
           For a newly diagnosed cancer patient and their loved ones, the “first
@@ -234,6 +234,9 @@
               alt=""
             />
             <p class="footer_left_logo_text">MyCareGorithm</p>
+            <div class="footer_left_logo_text_bottom">
+              <span>G</span>uiding <span>P</span>atients <span>S</span>martly
+            </div>
           </div>
 
           <div class="footer_right">
@@ -243,8 +246,11 @@
                 <p>450 Knights Run Ave Unit 1201 Tampa, FL 33602</p>
               </div>
               <div class="footer_right_subtitles">
-                <p>email address</p>
-                <p>Misty.James@MyCareGorithm.com</p>
+                <p>Contact us</p>
+                <p>
+                  Misty James <br />
+                  Misty.James@MyCareGorithm.com
+                </p>
               </div>
             </div>
             <div class="footer_contacts">
@@ -267,6 +273,34 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="./assets/js/navbar.js"></script>
+    <script>
+      function animate(elem) {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: elem,
+            start: "top center",
+            duration: 2,
+          },
+        });
+
+        tl.fromTo(
+          elem,
+          {
+            scrollTrigger: { trigger: elem },
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          }
+        );
+      }
+
+      animate(".about_us_img");
+      animate(".our_product_img");
+      animate(".ben_quote");
+    </script>
   </body>
 </html>
