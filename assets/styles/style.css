@@ -153,19 +153,25 @@
 .hero_section {
   width: 100%;
   height: 130vh;
-  background: url(../images/header.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  /* border: 2px solid red; */
   position: relative;
   z-index: 2;
   overflow: hidden;
-
   display: flex;
   align-items: unset;
   justify-content: center;
   flex-direction: column;
+}
+
+.hero_section_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .container-wrapper {
@@ -362,7 +368,7 @@
   border-radius: 8px;
   padding: 2.813rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   flex-basis: 300px;
@@ -401,7 +407,6 @@
   margin-bottom: 12.5rem;
 }
 .about_us_right {
-  /* border: 2px solid red; */
   width: 100%;
   max-width: 700px;
 }
@@ -501,6 +506,7 @@
   text-align: center;
   color: #252727;
   margin: 0 auto;
+  margin-bottom: 14px;
 }
 .our_product_disc {
   width: 100%;
@@ -569,16 +575,16 @@
   /* border: 2px solid red; */
   height: 900px;
 }
-.contact_us_wrapper::after {
-  content: "";
+.contact_us_wrapper_img {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
-  background: url(../images/contactUs_bg.png);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
+  object-fit: contain;
+  /* background: url(../images/contactUs_bg.png); */
+  /* background-repeat: no-repeat; */
+  /* background-position: 100% 100%; */
   z-index: -1;
   background-size: 60%;
   /* border: 2px solid red; */
@@ -648,13 +654,15 @@
   background-color: #252727;
 }
 .footer_wrapper {
-  height: 310px;
+  width: 100%;
+  /* height: 310px; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: white;
-  /* border: 2px solid red; */
   gap: 4.563rem;
-  padding: 37px 0;
+  padding: 3rem 0;
+  margin: 0 auto;
 }
 
 .footer_left {
@@ -689,6 +697,7 @@
   margin-top: 2.125rem;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 .footer_right {
   flex: 1;
@@ -698,16 +707,16 @@
   gap: 2rem;
 }
 .footer_right_titles_wrapper {
-  /* border: 2px solid red; */
   width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  /* gap: 9rem; */
 }
 
-.footer_right_titles p:nth-child(1),
-.footer_right_subtitles p:nth-child(1),
-.footer_contacts_phone_titles p:nth-child(1) {
+.footer_right_titles h5:nth-child(1),
+.footer_right_subtitles h5:nth-child(1),
+.footer_contacts_phone_titles h5:nth-child(1) {
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 36px;
@@ -731,6 +740,9 @@
 .footer_contacts {
   display: flex;
   justify-content: space-between;
+  /* border: 2px solid red; */
+  /* gap: 22.5rem; */
+  max-width: 800px;
 }
 
 .footer_social_icons {
@@ -747,6 +759,11 @@
 }
 .black_screen {
   display: none;
+}
+
+p {
+  /* border: 2px solid red; */
+  font-size: 1.2rem !important;
 }
 
 @media (max-width: 1400px) {
@@ -772,17 +789,17 @@
   }
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1350px) {
   .navbar_wrapper {
     padding: 0 3rem;
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .navbar_links {
     display: flex;
     align-items: center;
-    gap: 0rem;
+    gap: 2rem;
     height: 100%;
   }
 
@@ -793,12 +810,10 @@
 
   .navbar_link {
     font-size: 1rem;
-    padding: 0 0.8rem;
   }
 
   .navbar_dropdown_title {
     font-size: 1rem;
-    padding: 0 0.8rem;
   }
   .navbar_image {
     width: 300px;
@@ -817,7 +832,7 @@
     height: auto;
   }
 
-  .contact_us_wrapper::after {
+  .contact_us_wrapper_img {
     display: none;
   }
 
@@ -1017,9 +1032,12 @@
     height: auto;
     justify-content: flex-start;
     align-items: flex-start;
-    background-position: center left;
     padding-top: 120px;
     padding-bottom: 200px;
+  }
+
+  .hero_section_img {
+    background-position: center left;
   }
 }
 

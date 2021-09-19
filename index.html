@@ -46,10 +46,11 @@
     </div>
 
     <div class="hero_section">
+      <div class="hero_section_img"></div>
       <!-- main content -->
       <div class="container-wrapper">
         <div class="hero_titles_wrapper">
-          <p class="hero_title">Transforming the Doctor/Patient Experience</p>
+          <h1 class="hero_title">Transforming the Doctor/Patient Experience</h1>
           <p class="hero_subtitle">
             MyCareGorithm was created with the singular purpose of developing
             the tools to transform the consultation encounter between a cancer
@@ -78,7 +79,7 @@
             src="./assets/images/Asset 4@3x.png"
             alt=""
           />
-          <p class="why_mycaregorithm_title">Why MyCareGorithm?</p>
+          <h1 class="why_mycaregorithm_title">Why MyCareGorithm?</h1>
         </div>
 
         <div class="why_mycaregorithm_cards">
@@ -112,8 +113,8 @@
       <div class="about_us">
         <img class="about_us_img" src="./assets/images/aboutUs_bg.png" alt="" />
         <div class="about_us_right">
-          <!-- <p class="about_us_title">About Us</p> -->
-          <p class="about_us_subtitle">Mission Statement</p>
+          <h1 class="about_us_title">About Us</h1>
+          <h1 class="about_us_subtitle">Mission Statement</h1>
           <p class="about_us_disc">
             Empower patients, caregivers, physicians, and cancer programs with a
             differentiating and visually engaging platform to personalize
@@ -124,15 +125,15 @@
           <div class="about_us_cards">
             <a href="./our-team.html" class="about_us_card">
               <img src="./assets/images/ourTeam_icon.svg" alt="" />
-              <p class="about_us_card_title">Our Team</p>
+              <span class="about_us_card_title">Our Team</span>
             </a>
             <a href="./relationships.html" class="about_us_card">
               <img src="./assets/images/Relationship_icon.svg" alt="" />
-              <p class="about_us_card_title">Relationships</p>
+              <span class="about_us_card_title">Relationships</span>
             </a>
             <a href="./our-board.html" class="about_us_card">
               <img src="./assets/images/board_icon.svg" alt="" />
-              <p class="about_us_card_title">Advisory Board</p>
+              <span class="about_us_card_title">Advisory Board</span>
             </a>
           </div>
         </div>
@@ -142,17 +143,19 @@
     <!-- our_product -->
     <div id="ourproduct" class="container-wrapper">
       <div class="our_product">
-        <p class="our_product_title">Our Product</p>
-        <p class="our_product_subtitle">
-          We Bring Understanding and Confidence to Complicated and Difficult
-          Decisions
-        </p>
-        <p class="our_product_disc">
-          We work with some of the best cancer specialists in the country, some
-          of the most talented computer programming and animation specialists,
-          and patients themselves, to create the most compelling and memorable
-          consultation experience for all.
-        </p>
+        <div class="our_product_titles">
+          <h1 class="our_product_title">Our Product</h1>
+          <h1 class="our_product_subtitle">
+            We Bring Understanding and Confidence to Complicated and Difficult
+            Decisions
+          </h1>
+          <p class="our_product_disc">
+            We work with some of the best cancer specialists in the country,
+            some of the most talented computer programming and animation
+            specialists, and patients themselves, to create the most compelling
+            and memorable consultation experience for all.
+          </p>
+        </div>
 
         <img
           src="./assets/images/product_bg.png"
@@ -176,12 +179,12 @@
           alt=""
         />
 
-        <p class="ben_quote_title">
+        <h1 class="ben_quote_title">
           “A picture is worth a thousand words. An interface is worth a thousand
           pictures.” <br />
           -- <br />
           <span class="person_name"> Ben Schneiderman </span>
-        </p>
+        </h1>
         <p class="ben_quote_subtitle">
           For a newly diagnosed cancer patient and their loved ones, the “first
           step” is a consultation with a cancer specialist. It is essential that
@@ -194,10 +197,14 @@
 
     <!-- contact_us -->
     <div id="getintouch" class="contact_us_wrapper">
+      <img
+        src="./assets/images/contactUs_bg.png"
+        class="contact_us_wrapper_img"
+      />
       <div class="container-wrapper">
         <div class="contact_us">
-          <p class="contact_us_title">Contact Us</p>
-          <p class="contact_us_subtitle">Let’s Get in Touch</p>
+          <h1 class="contact_us_title">Contact Us</h1>
+          <h1 class="contact_us_subtitle">Let’s Get in Touch</h1>
           <p class="contact_us_subtitle_disc">
             We have compiled resources to help doctors and patients better
             understand how to use the tool.
@@ -233,7 +240,7 @@
               src="./assets/images/logo_bw 1.png"
               alt=""
             />
-            <p class="footer_left_logo_text">MyCareGorithm</p>
+            <h1 class="footer_left_logo_text">MyCareGorithm</h1>
             <div class="footer_left_logo_text_bottom">
               <span>G</span>uiding <span>P</span>atients <span>S</span>martly
             </div>
@@ -242,11 +249,11 @@
           <div class="footer_right">
             <div class="footer_right_titles_wrapper">
               <div class="footer_right_titles">
-                <p>address</p>
-                <p>450 Knights Run Ave Unit 1201 Tampa, FL 33602</p>
+                <h5>address</h5>
+                <p>450 Knights Run Ave<br />Unit 1201<br />Tampa, FL 33602</p>
               </div>
               <div class="footer_right_subtitles">
-                <p>Contact us</p>
+                <h5>Contact us</h5>
                 <p>
                   Misty James <br />
                   Misty.James@MyCareGorithm.com
@@ -255,7 +262,7 @@
             </div>
             <div class="footer_contacts">
               <div class="footer_contacts_phone_titles">
-                <p>Phone Number</p>
+                <h5>Phone Number</h5>
                 <p>832-439-9915</p>
               </div>
               <div class="footer_social_icons">
@@ -277,11 +284,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <script>
-      function animate(elem) {
+      function animate(elem, s = "top center") {
         let tl = gsap.timeline({
           scrollTrigger: {
             trigger: elem,
-            start: "top center",
+            start: s,
             duration: 2,
           },
         });
@@ -298,9 +305,13 @@
         );
       }
 
+      animate(".hero_section_img");
       animate(".about_us_img");
+      animate(".about_us_right", "top center");
       animate(".our_product_img");
       animate(".ben_quote");
+      animate(".our_product_titles");
+      animate(".contact_us_wrapper_img");
     </script>
   </body>
 </html>
