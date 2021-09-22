@@ -334,7 +334,9 @@
 /* why_mycaregorithm */
 .why_mycaregorithm {
   margin-top: 2rem;
-  margin-bottom: 10.563rem;
+  margin-bottom: 5rem;
+  /* border: 2px solid red; */
+  padding-top: 5.3rem;
 }
 .why_mycaregorithm_titles {
   text-align: center;
@@ -381,13 +383,12 @@
   color: #252727;
 }
 
-.why_mycaregorithm_card_1 {
+/* .why_mycaregorithm_card_1 {
   background: url(../images/image-56.png);
   background-repeat: no-repeat;
-  /* background-position: -40px 5px; */
   background-position: 300px 50px;
   background-size: 500px;
-}
+} */
 
 .why_mycaregorithm_card_2 {
   background: url(../images/logo_bg.png);
@@ -405,6 +406,7 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 12.5rem;
+  padding-top: 5.5rem;
 }
 .about_us_right {
   width: 100%;
@@ -786,6 +788,9 @@ p {
   .about_us_card {
     width: 150px;
     height: 150px;
+  }
+  .navbar_link {
+    font-size: 1rem;
   }
 }
 

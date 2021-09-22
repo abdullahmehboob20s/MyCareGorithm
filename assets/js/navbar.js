@@ -26,10 +26,10 @@ document.addEventListener("scroll", (e) => {
 
   if (scrollTop > 400) {
     if (scrollTop > lastScroll) {
-      navbar_wrapper.style.top = "-93px";
+      navbar_wrapper.style.opacity = ".2";
       // navbar_wrapper.style.background = "rgb(244, 202, 76)";
     } else {
-      navbar_wrapper.style.top = "0";
+      navbar_wrapper.style.opacity = "1";
     }
     lastScroll = scrollTop;
   }
