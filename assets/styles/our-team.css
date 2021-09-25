@@ -354,7 +354,7 @@ p {
   color: #00598b;
   text-decoration: none;
 }
-.guiding_patients_smartly_btns a:nth-child(2) {
+.meet-our-board {
   width: 230px;
   height: 62px;
   border-radius: 83px;
@@ -369,6 +369,24 @@ p {
   line-height: 27px;
   color: white;
   text-decoration: none;
+  transition: all 0.2s ease;
+  gap: 0.2rem;
+}
+
+.meet-our-board:hover {
+  text-decoration: none;
+
+  text-decoration: none;
+  background-color: #f2bf40;
+  color: #00598b;
+}
+
+.meet-our-board svg path {
+  transition: all 0.2s ease;
+}
+
+.meet-our-board:hover svg path {
+  fill: #00598b;
 }
 
 /* footer */
@@ -574,6 +592,32 @@ p {
   line-height: 30px;
   color: #252727;
   margin-top: 3.125rem;
+}
+
+/*  */
+
+.hover-state {
+  transition: all 0.2s ease;
+}
+.hover-state:hover {
+  text-decoration: none;
+  background-color: #f2bf40;
+  color: #00598b;
+}
+.hover-state.border-none:hover {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #f2bf40;
+}
+.hover-state.color-yellow:hover {
+  color: #f2bf40;
+}
+
+.hover-state:hover svg path:nth-child(1) {
+  fill: #00598b;
+}
+.hover-state:hover svg path:nth-child(2) {
+  stroke: #00598b;
 }
 
 /* ==================================================================================================== */

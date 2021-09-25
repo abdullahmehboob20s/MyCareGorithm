@@ -19,18 +19,18 @@ black_screen.addEventListener("click", () => {
   black_screen.classList.remove("show");
 });
 
-let lastScroll = 0;
+// let lastScroll = 0;
 
-document.addEventListener("scroll", (e) => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// document.addEventListener("scroll", (e) => {
+//   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > 400) {
-    if (scrollTop > lastScroll) {
-      navbar_wrapper.style.opacity = ".2";
-      // navbar_wrapper.style.background = "rgb(244, 202, 76)";
-    } else {
-      navbar_wrapper.style.opacity = "1";
-    }
-    lastScroll = scrollTop;
-  }
-});
+//   if (scrollTop > 400) {
+//     if (scrollTop > lastScroll) {
+//       navbar_wrapper.style.opacity = ".2";
+//       // navbar_wrapper.style.background = "rgb(244, 202, 76)";
+//     } else {
+//       navbar_wrapper.style.opacity = "1";
+//     }
+//     lastScroll = scrollTop;
+//   }
+// });
