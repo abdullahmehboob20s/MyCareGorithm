@@ -165,20 +165,23 @@ p {
   width: 100%;
   height: 604px;
   padding-top: 180px;
-  background: url(../images/our_team_bg.png);
+  background: url(../mycaregorithm-images/our_team_bg.png);
+  /* background: url(../images/our_team_bg.png); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   /* border: 2px solid red; */
 }
 .our_team_hero.board_img {
-  background: url(../images/board_img.png);
+  background: url(../mycaregorithm-images/board_img.png);
+  /* background: url(../images/board_img.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .our_team_hero.relationships_img {
-  background: url(../images/relationships_img.png);
+  background: url(../mycaregorithm-images/relationships_img.png);
+  /* background: url(../images/relationships_img.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -680,7 +683,7 @@ p {
 
   .navbar_links {
     position: fixed;
-    top: 93px;
+    top: 0;
     left: 0;
     width: 300px;
     height: 100%;
@@ -708,7 +711,10 @@ p {
   }
   .navbar_link {
     text-align: left;
+    height: 30px;
+    justify-content: flex-start;
   }
+
   .navbar_links_menue {
     position: absolute;
     top: 30px;
@@ -723,6 +729,10 @@ p {
     width: 28px;
     height: 24px;
     cursor: pointer;
+  }
+
+  .navbar_dropdown_title {
+    justify-content: space-between;
   }
 
   /* .black_screen {
@@ -760,7 +770,6 @@ p {
     justify-content: flex-start;
     padding-left: 2rem;
   }
-
   .people_card_title {
     opacity: 1;
   }

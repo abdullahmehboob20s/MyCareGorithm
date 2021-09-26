@@ -89,8 +89,9 @@
     </div>
 
     <!-- why_mycaregorithm -->
-    <div id="whymycaregorithm" class="container-wrapper">
-      <div class="why_mycaregorithm">
+    <div class="container-wrapper">
+      <div id="whymycaregorithm" class="why_mycaregorithm">
+        <div class="whymycaregorithm_position_div"></div>
         <div class="why_mycaregorithm_titles">
           <img
             class="why_mycaregorithm_title_img"
@@ -129,7 +130,12 @@
     <!-- about_us -->
     <div id="aboutus" class="container-wrapper">
       <div class="about_us">
-        <img class="about_us_img" src="./assets/images/aboutUs_bg.png" alt="" />
+        <img
+          class="about_us_img"
+          src="./assets/mycaregorithm-images/aboutUs_bg.png"
+          alt=""
+        />
+        <!-- <img class="about_us_img" src="./assets/images/aboutUs_bg.png" alt="" /> -->
         <div class="about_us_right">
           <h1 class="about_us_title">About Us</h1>
           <h1 class="about_us_subtitle">Mission Statement</h1>
@@ -176,7 +182,7 @@
             </p>
           </div>
           <img
-            src="./assets/images/product_bg.png"
+            src="./assets/mycaregorithm-images/product_bg.png"
             alt=""
             class="our_product_img"
           />
@@ -329,10 +335,10 @@
 
       animate(".hero_section_img");
       animate(".about_us_img");
-      animate(".about_us_right", "top center");
+      // animate(".about_us_right", "top center");
       animate(".our_product_img");
+      // animate(".our_product_titles");
       animate(".ben_quote");
-      animate(".our_product_titles");
       animate(".contact_us_wrapper_img");
     </script>
   </body>
